@@ -6,20 +6,16 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTNudzNub2N3Z2dscmJueTVodDQ0OGZwMmozNzF1eWJvdW5oMGd4OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RHIKETUlUINYvV7CAO/giphy.gif') no-repeat center center fixed;
+      background-size: cover;
       margin: 0;
       padding: 20px;
-      /* New GIF background */
-      background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTNudzNub2N3Z2dscmJueTVodDQ0OGZwMmozNzF1eWJvdW5oMGd4OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RHIKETUlUINYvV7CAO/giphy.gif');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
     }
 
     h1 {
       text-align: center;
       margin-bottom: 30px;
-      color: #ffffff;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      color: #004d40;
     }
 
     .games-grid {
@@ -31,7 +27,7 @@
     }
 
     .game-card {
-      background: rgba(255,255,255,0.8);
+      background: white;
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -40,11 +36,10 @@
       text-align: center;
     }
 
-    .game-card img {
+    .game-card iframe {
       width: 100%;
       height: 150px;
-      object-fit: cover;
-      display: block;
+      border: none;
     }
 
     .game-card h3 {
@@ -64,9 +59,9 @@
   
   <div class="games-grid">
     <!-- Game 1 -->
-    <a class="game-card" href="https://example.com/game1" target="_blank">
-      <img src="https://via.placeholder.com/180x150.png?text=Game+1" alt="Game 1">
-      <h3>Game 1</h3>
+    <a class="game-card" href="https://flanne.itch.io/10-minutes-till-dawn" target="_blank">
+      <iframe src="https://flanne.itch.io/10-minutes-till-dawn" allowfullscreen></iframe>
+      <h3>10 Minutes Till Dawn</h3>
     </a>
 
     <!-- Game 2 -->
@@ -86,6 +81,14 @@
       <img src="https://via.placeholder.com/180x150.png?text=Game+4" alt="Game 4">
       <h3>Game 4</h3>
     </a>
+
+    <!-- Additional Game Cards -->
+    <!-- Repeat the following block for each additional game -->
+    <a class="game-card" href="https://example.com/game5" target="_blank">
+      <img src="https://via.placeholder.com/180x150.png?text=Game+5" alt="Game 5">
+      <h3>Game 5</h3>
+    </a>
+    <!-- Add more game cards as needed -->
   </div>
 </body>
 </html>
