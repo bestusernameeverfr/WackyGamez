@@ -4,19 +4,71 @@
   <meta charset="UTF-8">
   <title>My Game Website</title>
   <style>
-    body { font-family: Arial; background: #e0f7fa; text-align: center; padding: 20px; }
-    iframe { border: 2px solid #004d40; border-radius: 10px; margin: 20px 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #e0f7fa;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .games-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .game-box {
+      width: 300px;
+      height: 200px;
+      border: 2px solid #004d40;
+      border-radius: 10px;
+      overflow: hidden;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .game-box iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .game-title {
+      font-weight: bold;
+      margin: 5px 0;
+    }
   </style>
 </head>
 <body>
   <h1>🎮 My Game Website</h1>
-  <p>Click below to play games!</p>
+  <p>Click a game below to play!</p>
 
-  <h2>Game 1</h2>
-  <iframe src="https://example.com/game1" width="800" height="600"></iframe>
+  <div class="games-grid">
+    <div class="game-box">
+      <div class="game-title">Game 1</div>
+      <iframe src="https://example.com/game1"></iframe>
+    </div>
 
-  <h2>Game 2</h2>
-  <iframe src="https://example.com/game2" width="800" height="600"></iframe>
+    <div class="game-box">
+      <div class="game-title">Game 2</div>
+      <iframe src="https://example.com/game2"></iframe>
+    </div>
 
+    <div class="game-box">
+      <div class="game-title">Game 3</div>
+      <iframe src="https://example.com/game3"></iframe>
+    </div>
+
+    <!-- Add more games by copying a .game-box block -->
+  </div>
 </body>
 </html>
